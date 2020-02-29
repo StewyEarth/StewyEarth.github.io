@@ -1,11 +1,11 @@
 let gulp = require("gulp")
 let connect = require("gulp-connect")
-const ghPages = require('gulp-gh-pages');
 let { watchHTML,htmlTask } = require("./tasks/html")
 let { watchCSS,cssTask } = require("./tasks/css")
 let { watchJS,jsTask } = require("./tasks/js")
 let { watchImages,imageTask } = require("./tasks/images")
 let { watchMedia,mediaTask } = require("./tasks/media")
+let { miscTask,watchMisc } = require("./tasks/misc")
 
 function watch() {
   watchHTML();
@@ -13,6 +13,7 @@ function watch() {
   watchJS();
   watchImages();
   watchMedia();
+  watchMisc();
   connect.server({
     livereload: true,
     root: "dist"
@@ -25,17 +26,10 @@ function build(done){
   jsTask();
   imageTask();
   mediaTask();
+  miscTask()
   done()
 }
 
-function deploy(done){
-  gulp.src('./dist/**/*').pipe(ghPages())
-  done()
-}
-
-
-gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
 
 exports.default = watch;
 exports.build = build;
-// exports.deploy = deploy;
