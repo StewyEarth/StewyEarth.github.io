@@ -1,8 +1,29 @@
 extends layouts/main.pug
 
 block title
-    title Template
+    title Daniel Yde Therkildsen
 
 block content
-    h1 Template
-    p This is a gulp template/boilerplate! Welcome!
+    .sitetop
+        img(src="assets/images/wave.svg", alt="wave").wavedevider
+        header.sitetop-header
+            a(href="/").sitebrand
+                img(src="assets/images/logo.svg", alt="logo")
+            label.opennav(for="navmenu") &#9776;
+            input#navmenu(type="checkbox", name="navmenu")
+            nav
+                label.closenav(for="navmenu") X
+                ul
+                    li
+                        a(href="#") Home
+                    li
+                        a(href="#") About
+                    li
+                        a(href="#") Projects
+                    li
+                        a(href="#") Contact
+                    li
+                        a(href="#") CV
+        .sitetop-content
+            h1 Hi! I'm Daniel
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci repellendus sunt sequi, doloribus corporis tempore maiores. Deleniti suscipit magnam aliquam consectetur totam neque voluptas mollitia ut! Beatae dicta tenetur fugiat.

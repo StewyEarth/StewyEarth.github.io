@@ -1,0 +1,115 @@
+.sitetop {
+    background-image: linear-gradient(to right bottom, #0076dd, #4d70ee, #8363f6, #b64bf5, #e600e9);
+    display: grid;
+    grid-template-rows: 5em 1fr;
+    position: relative;
+    color: white;
+    .wavedevider {
+        position: absolute;
+        bottom: -1%;
+    }
+
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+
+        .sitebrand {
+            width: 90%;
+            display: block;
+            margin-right: 1em;
+
+            img {
+                display: block;
+            }
+        }
+
+        .opennav {
+            padding: .5rem;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav {
+            visibility: hidden;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transform: translateX(100%);
+            transition: all .3s;
+            padding: 2em;
+            box-sizing: border-box;
+            background-image: linear-gradient(to left top, #368887, #268793, #1f859e, #2a81a7, #407dad);
+
+            .closenav {
+                position: absolute;
+                right: 1.2em;
+                top: 1em;
+                font-weight: bold;
+                border: 2px solid white;
+                padding: .5em;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+
+                li {
+                    font-size: 1.5em;
+                    padding: .5em;
+                    transition: background .1s;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: #1B6D7D;
+                    }
+                }
+            }
+        }
+
+        #navmenu {
+            display: none;
+        }
+
+        #navmenu:checked~nav {
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+}
+@media (min-width: 768px){
+    .sitetop {
+        .wavedevider {
+            position: absolute;
+            bottom: -1%;
+        }
+        &-header{
+            .sitebrand {
+                width: 30%;
+            }
+        }
+    }
+}

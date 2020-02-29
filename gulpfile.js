@@ -26,7 +26,6 @@ function build(done){
   imageTask();
   mediaTask();
   done()
-  
 }
 
 function deploy(done){
