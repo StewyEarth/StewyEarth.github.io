@@ -1,21 +1,24 @@
 extends layouts/main.pug
 
 block title
-    title Daniel Yde Therkildsen
+    title Daniel Yde Therkildsen - Danish Web Developer portfolio
+
+block description
+    meta(name="description", content="Hi! I'm Daniel Yde Therkildsen. I'm a Web Developer from Denmark. Here's some information/projects I've done.")
 
 block content
     .sitetop
         img(src="assets/images/wave.svg", alt="wave").wavedevider
         header.sitetop-header
             a(href="/").sitebrand
-                img(src="assets/images/logo.svg", alt="logo")
+                img(src="assets/images/logo.svg", alt="Daniel Yde Therkildsen - logo")
             label.opennav(for="navmenu") &#9776;
             input#navmenu(type="checkbox", name="navmenu")
             nav
                 label.closenav(for="navmenu") X
                 ul
                     li
-                        a(href="#") Home
+                        a(href="/") Home
                     li
                         a(href="#") About
                     li
@@ -25,5 +28,5 @@ block content
                     li
                         a(href="#") CV
         .sitetop-content
-            h1 Hi! I'm Daniel
+            h1.sitetop-content-title Hi! I'm Daniel
             p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci repellendus sunt sequi, doloribus corporis tempore maiores. Deleniti suscipit magnam aliquam consectetur totam neque voluptas mollitia ut! Beatae dicta tenetur fugiat.

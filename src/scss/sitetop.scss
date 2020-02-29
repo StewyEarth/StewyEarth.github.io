@@ -8,8 +8,6 @@
         position: absolute;
         bottom: -1%;
     }
-
-
     &-header {
         display: flex;
         justify-content: space-between;
@@ -38,6 +36,7 @@
         }
 
         nav {
+            z-index: 99999999;
             visibility: hidden;
             position: fixed;
             display: flex;
@@ -97,7 +96,21 @@
         text-align: center;
         width: 70%;
         margin: 0 auto;
-        margin-bottom: 100px;
+        margin-bottom: 30%;
+        animation: showTitle .5s forwards;
+        z-index: 0;
+        &-title{
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+    }
+    @keyframes showTitle {
+        from{
+            transform: translateY(50%);
+        }
+        to{
+            transform: translateY(0%);
+        }
     }
 }
 @media (min-width: 768px){
@@ -110,6 +123,10 @@
             .sitebrand {
                 width: 30%;
             }
+        }
+        &-content{
+            margin-top: 5%;
+            margin-bottom: 20%;
         }
     }
 }
