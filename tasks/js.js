@@ -9,7 +9,7 @@ const uglify = require("gulp-uglify");
 function jsTask() {
     return gulp.src('src/js/**/*.js')
         .pipe(sourcemaps.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/assets/js'))
         .pipe(connect.reload());

@@ -25,7 +25,6 @@ function build(done){
   jsTask();
   imageTask();
   mediaTask();
-  console.log(done)
   done()
   
 }
