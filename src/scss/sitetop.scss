@@ -4,9 +4,10 @@
     grid-template-rows: 5em 1fr;
     position: relative;
     color: white;
+    margin-bottom: 1em;
     .wavedevider {
         position: absolute;
-        bottom: -1%;
+        bottom: -1px;
     }
     &-header {
         display: flex;
