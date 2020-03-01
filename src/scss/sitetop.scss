@@ -104,6 +104,13 @@
             font-size: 2.5rem;
             margin-bottom: 0;
         }
+        .button-calltoaction--white{
+            margin: 1em 0 2em;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
     }
     @keyframes showTitle {
         from{
@@ -122,12 +129,24 @@
         }
         &-header{
             .sitebrand {
-                width: 30%;
+                width: 25%;
             }
         }
         &-content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20%;
+            width: 90%;
+            text-align: left;
             margin-top: 5%;
             margin-bottom: 20%;
+            &-left{
+                width: 80%;
+            }
+            &-title{
+                font-size: 3.5em;
+                margin: 0;
+            }
         }
     }
 }

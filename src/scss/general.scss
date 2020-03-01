@@ -1,5 +1,36 @@
-
-body{
+body {
     margin: 0;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.button {
+    &-calltoaction {
+        align-self: center;
+        padding: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 1em;
+        display: inline-block;
+        i{
+            visibility: hidden;
+            transition: all .5s;
+            opacity: 0;
+            position: absolute;
+        }
+        &:hover i{
+            margin-left: .5em;
+            visibility: visible;
+            opacity: 1;
+            position: static;
+        }
+        &--white {
+            font-size: .9rem;
+            @extend .button-calltoaction;
+            border: 2px solid white;
+            background: transparent;
+            color:white;
+            position: relative;
+            transition: all .3s;
+        }
+    }
 }
