@@ -1,0 +1,70 @@
+.contact{
+    background: linear-gradient(to right bottom,rgba(0, 118, 221,.7),rgba(77, 112, 238,.7),rgba(131, 99, 246,.7),rgba(182, 75, 245,.7),rgba(230, 0, 233,.7)),url(https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2004&q=80);
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
+    &-content{
+        width: 100%;
+        background-color: white;
+        border-radius: .5em;
+        padding: 2em;
+        box-sizing: border-box;
+        box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 3px 20px 0px
+        rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        h1{
+        }
+        .contactform{
+            text-align: center;
+            input,textarea{
+                margin-bottom: 1em;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 1.2em;
+                border: none;
+                color: #515b66;
+                padding: 1em;
+                font-size: .9rem;
+                font-weight: bold;
+                /* Shadow stuff */
+                box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+                -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+                -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+                -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+                -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+    
+            }
+            textarea{
+                font-family: inherit;
+                resize: none;
+            }
+            &-phonenumber{
+                color: #515b66;
+                a{
+                    color:#bd59d4;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .contact{
+        &-content{
+            width: 50%;
+            .contactform{
+                input,textarea{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
