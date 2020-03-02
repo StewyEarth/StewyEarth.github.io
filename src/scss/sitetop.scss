@@ -153,9 +153,25 @@
                     display: flex;
                     li{
                         font-size: 1.2rem;
-
+                        position: relative;
+                        transition: all .2s;
+                        &::after{
+                            content: "";
+                            height: 2px;
+                            position: absolute;
+                            width: 0;
+                            left: 25%;
+                            bottom: .2em;
+                            background: white;
+                            transition: all .2s;
+                            margin: 0 auto;
+                        }
                         &:hover{
                             background-color: transparent;
+                            font-weight: bold;
+                        }
+                        &:hover::after{
+                            width: 50%;
                         }
                     }
                 }
