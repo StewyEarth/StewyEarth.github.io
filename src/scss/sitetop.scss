@@ -5,6 +5,7 @@
     position: relative;
     color: white;
     margin-bottom: 1em;
+    overflow: hidden;
     .wavedevider {
         position: absolute;
         bottom: -1px;
@@ -130,6 +131,34 @@
         &-header{
             .sitebrand {
                 width: 25%;
+            }
+        }
+        &-header {
+            .opennav{
+                display: none;
+            }
+            nav{
+                visibility: visible;
+                transform: translate(0);
+                position: static;
+                height: initial;
+                width: initial;
+                display: block;
+                padding: 0;
+                background: transparent;
+                .closenav{
+                    display: none;
+                }
+                ul{
+                    display: flex;
+                    li{
+                        font-size: 1.2rem;
+
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                }
             }
         }
         &-content{
