@@ -6,7 +6,31 @@
     width: 100%;
     color: white;
     padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     p{
         margin: 0;
+    }
+    a{
+        color: lime; 
+    }
+    .cookieconcent-button{
+        padding: .5em;
+        color: white;
+        cursor: pointer;
+    }
+    .cookieconcent-button--accept{
+        @extend .cookieconcent-button;
+        background: rgb(8, 170, 35);
+        color: white;
+        border: none;
+        margin-right: 1em;
+    }
+    .cookieconcent-button--reject{
+        @extend .cookieconcent-button;
+        background: red;
+        border: none;
     }
 }
