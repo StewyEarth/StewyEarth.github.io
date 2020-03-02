@@ -38,8 +38,9 @@ block content
             img(src="/assets/images/top-logo.svg", alt="Daniel Yde Therkildsen - Responsive design image")
     .contact
         .contact-content
-            h1 Contact me
+            h2 Contact me
             form.contactform(action="https://formspree.io/xqkbdeor" method="post")
+                input(type="text" name="name" placeholder="Full name")
                 input(type="email" name="email" placeholder="Email")
                 input(type="text" name="subject" placeholder="Subject")
                 textarea#message(name="message", cols="30", rows="10" placeholder="Message")

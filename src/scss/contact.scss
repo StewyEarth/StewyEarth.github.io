@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4em 2em;
+    padding: 2em 1em;
     &-content{
         width: 100%;
         background-color: white;
@@ -21,15 +21,15 @@
         h1{
         }
         .contactform{
+            color: #515b66;
             text-align: center;
             input,textarea{
-                margin-bottom: 1em;
+                margin-bottom: 1.5em;
                 display: block;
                 width: 100%;
                 box-sizing: border-box;
                 border-radius: 1.2em;
                 border: none;
-                color: #515b66;
                 padding: 1em;
                 font-size: .9rem;
                 font-weight: bold;
@@ -45,8 +45,10 @@
                 font-family: inherit;
                 resize: none;
             }
+            button{
+                font-size: .85rem;
+            }
             &-phonenumber{
-                color: #515b66;
                 a{
                     color:#bd59d4;
                     text-decoration: none;
@@ -58,11 +60,15 @@
 
 @media (min-width: 768px){
     .contact{
+        padding: 4em 2em;
         &-content{
             width: 50%;
             .contactform{
                 input,textarea{
                     font-size: 1rem;
+                }
+                button{
+                    font-size: .9rem;
                 }
             }
         }
