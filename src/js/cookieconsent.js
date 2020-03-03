@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     cookieRejectElem.addEventListener("click", () => {
+        window['ga-disable-UA-159376558-1'] = true;
         localStorage.setItem("consent", "rejected")
         cookieConsentElem.classList.remove("cookieconsent--show")
     })
@@ -35,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-159376558-1');
     }
 });

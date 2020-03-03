@@ -40,10 +40,10 @@ block content
         .contact-content
             h2 Contact me
             form.contactform(action="https://formspree.io/xqkbdeor" method="post")
-                input(type="text" name="name" placeholder="Full name")
-                input(type="email" name="email" placeholder="Email")
-                input(type="text" name="subject" placeholder="Subject")
-                textarea#message(name="message", cols="20", rows="5" placeholder="Message")
+                input(type="text" name="name" placeholder="Name*")
+                input(type="email" name="email" placeholder="Email*")
+                input(type="text" name="subject" placeholder="Subject*")
+                textarea#message(name="message", cols="20", rows="5" placeholder="Message*")
                 button.button-calltoaction--purple-filled SEND EMAIL
                 p.contactform-phonenumber
                     span Call me at: 
