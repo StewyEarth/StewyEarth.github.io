@@ -20,8 +20,10 @@
         -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
         -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
         .contactform{
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
             color: #515b66;
-            text-align: center;
             &-input{
                 margin-bottom: 1.5em;
                 display: block;
@@ -31,7 +33,7 @@
                 border: none;
                 padding: 1em;
                 font-size: .9rem;
-                font-weight: bold;
+                // font-weight: bold;
                 /* Shadow stuff */
                 box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
                 -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
@@ -64,17 +66,26 @@
                     border-right: 1px solid white;
                 }
             }
+            label{
+                margin: 0 0 .5em 1em;
+                color:#6a2f77;
+                font-weight: bold;
+            }
             button{
                 font-size: .85rem;
                 cursor: pointer;
+                text-align: center;
+                margin-top: 1em;
             }
             &-phonenumber{
+                text-align: center;
                 a{
                     color:#6a2f77;
                     text-decoration: none;
                 }
             }
             &-status{
+                margin: 0;
                 color: red;
             }
 

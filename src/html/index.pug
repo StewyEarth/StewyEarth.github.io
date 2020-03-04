@@ -39,12 +39,16 @@ block content
     .contact
         .contact-content
             h2 Contact me
-            p Do you want to get in contact with me? Here's your chance!
+            p Do you want to get in contact with me? Here's your chance! Just fill in your information below and I'll get back to you as soon as possible!
             form.contactform(action="https://formspree.io/xqkbdeor" method="post")
-                input.contactform-input(type="text" name="name" placeholder="Name*")
-                input.contactform-input(type="email" name="email" placeholder="Email*")
-                input.contactform-input(type="text" name="subject" placeholder="Subject*")
-                textarea#message.contactform-input(name="message", cols="20", rows="5" placeholder="Message*")
+                label(for="name") Name*
+                input#name.contactform-input(type="text" name="name" placeholder="Name")
+                label(for="email") Email*
+                input#email.contactform-input(type="email" name="email" placeholder="Email")
+                label(for="subject") Subject*
+                input#subject.contactform-input(type="text" name="subject" placeholder="Subject")
+                label(for="message") Message*
+                textarea#message.contactform-input(name="message", cols="20", rows="5" placeholder="Message")
                 p.contactform-status(name="status")
                 button.button-calltoaction--purple-filled SEND EMAIL
                 p.contactform-phonenumber
