@@ -22,7 +22,7 @@
         .contactform{
             color: #515b66;
             text-align: center;
-            input,textarea{
+            &-input{
                 margin-bottom: 1.5em;
                 display: block;
                 width: 100%;
@@ -38,7 +38,10 @@
                 -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
                 -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
                 -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
-    
+                border: 2px solid transparent;
+                &--error{
+                    border-color: red;
+                }
             }
             textarea{
                 font-family: inherit;
@@ -71,6 +74,7 @@
                     text-decoration: none;
                 }
             }
+
         }
     }
 }

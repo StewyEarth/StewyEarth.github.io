@@ -39,12 +39,16 @@ block content
     .contact
         .contact-content
             h2 Contact me
+            p Do you want to get in contact with me? Here's your chance!
             form.contactform(action="https://formspree.io/xqkbdeor" method="post")
-                input(type="text" name="name" placeholder="Name*")
-                input(type="email" name="email" placeholder="Email*")
-                input(type="text" name="subject" placeholder="Subject*")
-                textarea#message(name="message", cols="20", rows="5" placeholder="Message*")
+                input.contactform-input(type="text" name="name" placeholder="Name*")
+                input.contactform-input(type="email" name="email" placeholder="Email*")
+                input.contactform-input(type="text" name="subject" placeholder="Subject*")
+                textarea#message.contactform-input(name="message", cols="20", rows="5" placeholder="Message*")
                 button.button-calltoaction--purple-filled SEND EMAIL
                 p.contactform-phonenumber
                     span Call me at: 
                     a(href="tel:+4523371716") +45 23 37 17 16
+
+block scripts
+    script(src="/assets/js/contact.js")
