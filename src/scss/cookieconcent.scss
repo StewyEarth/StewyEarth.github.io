@@ -28,14 +28,14 @@
     }
     .cookieconcent-button--accept{
         @extend .cookieconcent-button;
-        background: rgb(8, 170, 35);
+        background: #06821b;
         color: white;
         border: none;
         margin-right: 2em;
     }
     .cookieconcent-button--reject{
         @extend .cookieconcent-button;
-        background: red;
+        background: #c00000;
         border: none;
     }
 }
