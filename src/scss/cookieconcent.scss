@@ -10,11 +10,13 @@
     padding: 1em;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     transition: all .3s;
     p{
         margin: 0;
+        margin-bottom: 1em;
     }
     a{
         color: lime; 
@@ -29,7 +31,7 @@
         background: rgb(8, 170, 35);
         color: white;
         border: none;
-        margin-right: 1em;
+        margin-right: 2em;
     }
     .cookieconcent-button--reject{
         @extend .cookieconcent-button;
@@ -39,4 +41,15 @@
 }
 .cookieconsent--show{
     transform: translateY(0);
+}
+@media (min-width:950px){
+    .cookieconcent{
+        flex-direction: row;
+        p{
+            margin-bottom: 0;
+        }
+        .cookieconcent-button--accept{
+            margin-right: 1em;
+        }
+    }
 }
