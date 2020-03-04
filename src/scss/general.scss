@@ -31,6 +31,13 @@ body {
             color:white;
             transition: all .3s;
         }
+        &--white-filled{
+            @extend .button-calltoaction;
+            background: transparent;
+            background: white;
+            color: black;
+            transition: all .3s;
+        }
         &--purple-filled {
             @extend .button-calltoaction;
             border: none;
