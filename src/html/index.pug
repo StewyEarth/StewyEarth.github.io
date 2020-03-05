@@ -40,7 +40,7 @@ block content
         .contact-content
             h2 Contact me
             p Do you want to get in contact with me? Here's your chance! Just fill in your information below and I'll get back to you as soon as possible!
-            form.contactform(action="https://formspree.io/xqkbdeor" method="post")
+            form.contactform(method="post" name="contact" netlify)
                 label(for="name") Name*
                 input#name.contactform-input(type="text" name="name" placeholder="Name")
                 label(for="email") Email*
